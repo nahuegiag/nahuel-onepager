@@ -360,6 +360,23 @@
     color: #bbb;
   }
 
+  /* MOBILE */
+  @media (max-width: 700px) {
+    body { padding: 1.25rem 1rem; }
+    .onepager { padding: 1.25rem 1rem; }
+    .op-body { grid-template-columns: 1fr; gap: 1.25rem; }
+    .op-header { grid-template-columns: 1fr; text-align: left; }
+    .op-header-meta { text-align: left; display: flex; gap: 1rem; align-items: baseline; }
+    .op-name { font-size: 26px; }
+    .op-metrics-strip { flex-direction: column; }
+    .op-metric-cell { border-right: none; border-bottom: 0.5px solid #e0e0e0; }
+    .op-metric-cell:last-child { border-bottom: none; }
+    .op-two-cards { grid-template-columns: 1fr; gap: 1rem; }
+    .op-kuna-right { grid-template-columns: 1fr; }
+    .op-kuna-left { padding-bottom: 0.75rem; }
+    .op-footer { flex-direction: column; gap: 0.25rem; align-items: flex-start; }
+  }
+
 </style>
 </head>
 <body>
