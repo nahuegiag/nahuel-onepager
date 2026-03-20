@@ -9,14 +9,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'DM Sans', sans-serif; background: #ffffff; color: #1a1a1a; }
 
-  /* ========== LOGIN ========== */
-  .login-screen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 2rem;
-  }
+  .login-screen { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
   .login-box { width: 100%; max-width: 340px; text-align: center; }
   .login-name { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; color: #1a1a1a; margin: 0 0 4px; }
   .login-sub { font-size: 10px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; margin: 0 0 2rem; }
@@ -370,7 +363,6 @@
 </style>
 </head>
 <body>
-
   <div class="login-screen" id="loginScreen">
     <div class="login-box">
       <p class="login-name">Nahuel Giagnorio</p>
@@ -381,7 +373,6 @@
       <p class="login-error" id="loginError"></p>
     </div>
   </div>
-
   <div class="onepager" id="onepager">
 <!-- HEADER -->
   <div class="op-header">
@@ -471,7 +462,7 @@
       <div class="op-two-cards">
         <div class="op-asp-item">
           <p class="op-asp-title">Medición y atribución</p>
-          <p class="op-asp-text">Construir un framework de atribución que mida el impacto real de Lifecycle en conversiones y revenue, no solo en deliveries. Conectar el modelo relacional de flujos con resultados de negocio para optimizar inversión por segmento.</p>
+          <p class="op-asp-text">Construir un framework de atribución que mida el impacto real del funnel completo en conversiones y revenue. Conectar el modelo relacional de flujos con resultados de negocio para optimizar inversión por segmento.</p>
         </div>
         <div class="op-asp-item">
           <p class="op-asp-title">Crecimiento personal</p>
@@ -506,7 +497,6 @@
     <p class="op-footer-right">nahuel.giagnorio@kavak.com</p>
   </div>
   </div>
-
   <script>
     const PASS = 'Nahuel';
     const passField = document.getElementById('loginPass');
@@ -527,6 +517,5 @@
     loginBtn.addEventListener('click', tryLogin);
     passField.addEventListener('keydown', function(e) { if (e.key === 'Enter') tryLogin(); });
   </script>
-
 </body>
 </html>
